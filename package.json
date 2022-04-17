@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "https://github.com/mugi-uno/parcel-plugin-bundle-manifest, but for Parcel 2",
   "scripts": {
-    "build": "parcel build src/BundleManifestReporter.ts",
-    "test": "jest",
-    "prepare": "npm run build && husky install",
-    "format": "prettier --write ."
+    "build": "parcel build src/BundleManifestReporter.ts"
   },
   "repository": {
     "type": "git",
@@ -39,9 +36,7 @@
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.3",
-    "husky": "^7.0.4",
     "jest": "^27.3.1",
-    "lint-staged": "^11.2.3",
     "parcel": "^2.0.0",
     "prettier": "^2.4.1",
     "ts-jest": "^27.0.7",
@@ -55,8 +50,5 @@
       },
       "isLibrary": true
     }
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
   }
 }
